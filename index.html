@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    div.box1{
+        width: 540px; 
+        min-height: 460px; 
+        padding: 10px 0;
+        margin: auto;
+        border-radius: 10px; 
+        border: solid 6px white;
+        box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+        background: wheat; 
+    }
+    html, body{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        background-color: darkseagreen;
+    }
+    body, div, h1, form, input{ 
+        padding: 0;
+        margin: 0;
+        outline: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        font-size: 16px;
+        color:  black;
+    }
+    h1{
+        padding: 10px 0;
+        font-size: 32px;
+        font-weight: 300;
+        text-align: center;
+    }
+    label{
+        padding: 10px;
+    }
+    form{
+        margin: 0 60px;
+      }
+    .gender {
+        margin-left: 12px;
+    }
+    .spasi{
+        margin-left: -28px;
+    }
+    .spasinama{
+        margin: 24px;
+    }
+    .spasiemail{
+        margin: 27px;
+    }
+    .spasihobby{
+        margin-left: 19px;
+    }
+    .spasiprovince{
+        margin-left: 5px;
+    }
+    .spasiaddress{
+        margin-left: 9px;
+    }
+    .button {
+        color: black;
+        background-color: thistle;
+        width: 45%;
+        height: 50px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 600;
+        border: auto;
+        margin-left: 28%;
+      }
+    button:hover {
+      background: azure;
+      }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Form</title>
+</head>
+<body>
+    <div class="box1">
+    <h1>Tugas Form</h1>
+    <hr>
+    <form>
+        <label for="nama">Name</label>
+        <label class="spasinama">:</label>
+        <input class="spasi" type="text" id="nama" name="nama">
+    <br><br>
+        <label for="email">Email</label>
+        <label class="spasiemail">:</label>
+        <input class="spasi" type="email" id="email" name="email">
+    <br><br>
+        <label for="password">Password</label>
+        <label>:</label>
+        <input type="password" id="password" name="password">
+    <br><br>
+        <label for="gender"> Gender</label>
+        <label class="gender">:</label>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender">
+        <label for="male">Female</label>
+    <br><br>
+        <label for="hobby">Hobby</label>
+        <label class="spasihobby">:</label>
+        <input type="checkbox" id="coding" name="hobby">
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="design" name="hobby">
+        <label for="desgin">Design</label>
+        <input type="checkbox" id="reading" name="hobby">
+        <label for="reading">Reading</label>
+    <br><br>
+        <label for="combobox">Province</label>
+        <label class="spasiprovince">:</label>
+        <select id="provinsi" name="provinsi">
+            <option value="bali">Bali</option>
+            <option value="jatim">Jawa Timur</option>
+            <option value="ntb">Nusa Tenggara Barat</option>
+            <option value="maluku">Maluku</option>
+            <option value="papua">Papua</option>
+        </select>
+    <br><br>
+    <div style="float: left; margin-top: 50px;">
+        <label for="textarea">Address</label>
+        <label class="spasiaddress">:</label>
+    </div>
+        <textarea name="address" rows="10" cols="30"></textarea>
+    <br><br>
+        <button class="button" type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>
